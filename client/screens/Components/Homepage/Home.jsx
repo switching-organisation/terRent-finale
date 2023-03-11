@@ -8,40 +8,36 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 const Home = ({ navigation: { navigate } }) => {
   return (
-    <ScrollView style={{ backgroundColor: "black" }}>
+    <ScrollView>
       <Card
         style={{
           paddingBottom: 10,
           paddingHorizontal: 10,
-          backgroundColor: "black",
+
           shadowColor: "transparent",
-          backgroundColor: "black",
         }}
         onPress={() => {
-          navigate("Allterrains", {
-            Category: "foot",
-            imgg: "https://i.pinimg.com/originals/e3/30/7e/e3307ee202d6b7defb08c64fc00ff41b.jpg",
-          });
+          navigate("Allterrains", { Category: "foot" });
         }}
       >
         <View style={{ opacity: 0.9 }}>
           <Card.Cover
             source={{
-              uri: "https://i.pinimg.com/originals/e3/30/7e/e3307ee202d6b7defb08c64fc00ff41b.jpg",
+              uri: "https://www.wondriumdaily.com/wp-content/uploads/2022/11/11-30-22-Feature-1024x555.jpg",
             }}
           />
         </View>
         <Text
           style={{
             position: "absolute",
-            top: 10,
+            top: 140,
             left: 0,
             right: 0,
             bottom: 0,
             justifyContent: "center",
             alignItems: "center",
-
-            color: "orange",
+            backgroundColor: "rgba(0,0,0,0.6)",
+            color: "white",
             fontSize: 25,
             paddingLeft: 20,
             borderBottomLeftRadius: 14,
@@ -54,8 +50,8 @@ const Home = ({ navigation: { navigate } }) => {
         <Text
           style={{
             position: "absolute",
-            top: 50,
-            left: 30,
+            top: 170,
+            left: 50,
             right: 0,
             bottom: 0,
             justifyContent: "center",
@@ -72,33 +68,29 @@ const Home = ({ navigation: { navigate } }) => {
           paddingBottom: 10,
           paddingHorizontal: 10,
           shadowColor: "transparent",
-          backgroundColor: "black",
         }}
         onPress={() => {
-          navigate("Allterrains", {
-            Category: "basket",
-            imgg: "https://w0.peakpx.com/wallpaper/737/886/HD-wallpaper-basketball-black-pure.jpg",
-          });
+          navigate("Allterrains", { Category: "basket" });
         }}
       >
         <View style={{ opacity: 0.9 }}>
           <Card.Cover
             source={{
-              uri: "https://w0.peakpx.com/wallpaper/737/886/HD-wallpaper-basketball-black-pure.jpg",
+              uri: "https://blog.nasm.org/hubfs/Training%20Basketball%20Players-1.jpg",
             }}
           />
         </View>
         <Text
           style={{
             position: "absolute",
-            top: 10,
+            top: 140,
             left: 0,
             right: 0,
             bottom: 0,
             justifyContent: "center",
             alignItems: "center",
-
-            color: "orange",
+            backgroundColor: "rgba(0,0,0,0.6)",
+            color: "white",
             fontSize: 25,
             paddingLeft: 20,
             borderBottomLeftRadius: 14,
@@ -111,8 +103,8 @@ const Home = ({ navigation: { navigate } }) => {
         <Text
           style={{
             position: "absolute",
-            top: 50,
-            left: 30,
+            top: 170,
+            left: 50,
             right: 0,
             bottom: 0,
             justifyContent: "center",
@@ -128,33 +120,29 @@ const Home = ({ navigation: { navigate } }) => {
           paddingBottom: 10,
           paddingHorizontal: 10,
           shadowColor: "transparent",
-          backgroundColor: "black",
         }}
         onPress={() => {
-          navigate("Allterrains", {
-            Category: "hand",
-            imgg: "https://www.sg-as.com/assets/default/ebd04b0d-8c3b-4f7a-a134-785db0a5f232/JyskArena7.jpg",
-          });
+          navigate("Allterrains", { Category: "hand" });
         }}
       >
         <View style={{ opacity: 0.9 }}>
           <Card.Cover
             source={{
-              uri: "https://www.sg-as.com/assets/default/ebd04b0d-8c3b-4f7a-a134-785db0a5f232/JyskArena7.jpg",
+              uri: "https://triptale.net/wp-content/uploads/2020/06/ball_skopje_handball.jpg",
             }}
           />
         </View>
         <Text
           style={{
             position: "absolute",
-            top: 10,
+            top: 140,
             left: 0,
             right: 0,
             bottom: 0,
             justifyContent: "center",
             alignItems: "center",
-
-            color: "orange",
+            backgroundColor: "rgba(0,0,0,0.6)",
+            color: "white",
             fontSize: 25,
             paddingLeft: 20,
             borderBottomLeftRadius: 14,
@@ -167,8 +155,8 @@ const Home = ({ navigation: { navigate } }) => {
         <Text
           style={{
             position: "absolute",
-            top: 50,
-            left: 30,
+            top: 170,
+            left: 50,
             right: 0,
             bottom: 0,
             justifyContent: "center",
@@ -184,33 +172,29 @@ const Home = ({ navigation: { navigate } }) => {
           paddingBottom: 10,
           paddingHorizontal: 10,
           shadowColor: "transparent",
-          backgroundColor: "black",
         }}
         onPress={() => {
-          navigate("Allterrains", {
-            Category: "tennis",
-            imgg: "https://imageio.forbes.com/specials-images/imageserve/613f73621f830bcc3318fe25/Laver-Cup-2021-Boston/960x0.jpg?height=463&width=711&fit=bounds",
-          });
+          navigate("Allterrains", { Category: "tennis" });
         }}
       >
         <View style={{ opacity: 0.9 }}>
           <Card.Cover
             source={{
-              uri: "https://imageio.forbes.com/specials-images/imageserve/613f73621f830bcc3318fe25/Laver-Cup-2021-Boston/960x0.jpg?height=463&width=711&fit=bounds",
+              uri: "https://reviewed-com-res.cloudinary.com/image/fetch/s--UJ2sGByA--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_972/https://reviewed-production.s3.amazonaws.com/1597356287543/GettyImages-1171084311.jpg",
             }}
           />
         </View>
         <Text
           style={{
             position: "absolute",
-            top: 10,
+            top: 140,
             left: 0,
             right: 0,
             bottom: 0,
             justifyContent: "center",
             alignItems: "center",
-
-            color: "orange",
+            backgroundColor: "rgba(0,0,0,0.6)",
+            color: "white",
 
             fontSize: 25,
             paddingLeft: 20,
@@ -223,8 +207,8 @@ const Home = ({ navigation: { navigate } }) => {
         <Text
           style={{
             position: "absolute",
-            top: 50,
-            left: 30,
+            top: 170,
+            left: 50,
             right: 0,
             bottom: 0,
             justifyContent: "center",
@@ -241,34 +225,30 @@ const Home = ({ navigation: { navigate } }) => {
           paddingBottom: 10,
           paddingHorizontal: 10,
           shadowColor: "transparent",
-          backgroundColor: "black",
         }}
         onPress={() => {
-          navigate("Allterrains", {
-            Category: "paintball",
-            imgg: "https://st3.depositphotos.com/1000689/16148/i/450/depositphotos_161489420-stock-photo-heavily-armed-masked-soldier-isolated.jpg",
-          });
+          navigate("Allterrains", { Category: "paintball" });
         }}
       >
         <View style={{ opacity: 0.9 }}>
           <Card.Cover
             source={{
-              uri: "https://st3.depositphotos.com/1000689/16148/i/450/depositphotos_161489420-stock-photo-heavily-armed-masked-soldier-isolated.jpg",
+              uri: "https://paintballsports.co.uk/wp-content/uploads/2022/04/FF0924_2015_2_Bundesliga_Spieltag1-2-19.jpg",
             }}
           />
         </View>
         <Text
           style={{
             position: "absolute",
-            top: 10,
+            top: 140,
             left: 0,
             right: 0,
             bottom: 0,
             overflow: "hidden",
             justifyContent: "center",
             alignItems: "center",
-
-            color: "orange",
+            backgroundColor: "rgba(0,0,0,0.6)",
+            color: "white",
             fontSize: 25,
             paddingLeft: 20,
             borderBottomLeftRadius: 14,
@@ -281,8 +261,8 @@ const Home = ({ navigation: { navigate } }) => {
         <Text
           style={{
             position: "absolute",
-            top: 50,
-            left: 30,
+            top: 170,
+            left: 50,
             right: 0,
             bottom: 0,
             justifyContent: "center",
