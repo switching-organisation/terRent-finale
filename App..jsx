@@ -35,7 +35,7 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="Landingscreen"
           component={LandingScreen}
           options={{
@@ -106,7 +106,7 @@ const App = () => {
             },
             title: "Register Here",
           }}
-        ></Stack.Screen> */}
+        ></Stack.Screen>
 
         <Stack.Screen
           name="Home"
