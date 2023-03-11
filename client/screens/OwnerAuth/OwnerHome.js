@@ -7,10 +7,16 @@ import { useNavigation } from "@react-navigation/native";
 
 
 import AsyncStorage  from '@react-native-async-storage/async-storage';
+import { baseUrl } from '../../urlConfig/urlConfig.js';
 const OwnerHome = () => {
 const [ownerData,setOwnerData] = useState([])
 const [stop,setStop] = useState(false)
-  const navigation = useNavigation()
+ 
+
+
+const navigation = useNavigation()
+
+
 const LogOut = () => {
 
   
@@ -29,7 +35,7 @@ _retrieveData = async () => {
     const value = await AsyncStorage.getItem("Token");
 
    console.log("welcome :",value)
-    let ownerData= await axios.get(`http://192.168.43.52:3000/owner/signInOwner/${value}`)
+    let ownerData= await axios.get(`${baseUrl}owner/signInOwner/${value}`)
     console.log("owner",ownerData.data );
     return ownerData.data;
 
@@ -42,7 +48,7 @@ _retrieveData = async () => {
 useEffect(() => {
 
   _retrieveData().then((res)=> 
- { console.log('response :::::',res);  
+ { 
    setOwnerData(res[0])}
   )
 },[stop])
